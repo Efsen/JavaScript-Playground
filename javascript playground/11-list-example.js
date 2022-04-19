@@ -21,5 +21,39 @@ listchange.prepend(lichange)//first item
 
 listchange.append(lichange2)//last item
 
-
 console.log(listchange)
+
+/*---------------Just Add--------------------------- */
+
+var list = document.querySelector("ul")
+var product = document.querySelector("#data")
+var textadd = document.querySelector("#text-add")
+var textdelete = document.querySelector("#text-remove")
+
+textadd.addEventListener("click",function(){
+    var li = document.createElement("li"); 
+    li.textContent=product.value; 
+    list.appendChild(li);
+                
+    // Veri inputu içerisindeki metni siliyoruz.
+    product.value = "";
+});
+
+/*----------------Together---------------------- */
+var list = document.querySelector("#list2")
+var product = document.querySelector("#data2")
+var textadd = document.querySelector("#text-add2")
+
+textadd.addEventListener("click",function(){
+    var li = document.createElement("li"); 
+    li.textContent=product.value; 
+    list.appendChild(li);
+    product.value = "";
+});
+function myFunction() {
+    const list = document.getElementById("list2");
+    if (list.hasChildNodes()) {
+      list.removeChild(list.lastChild);
+    }
+}
+
