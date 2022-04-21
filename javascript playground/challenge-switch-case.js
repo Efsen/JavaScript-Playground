@@ -1,3 +1,5 @@
+//https://www.hackerrank.com/challenges/js10-switch/submissions/code/266808716
+
 'use strict';
 
 process.stdin.resume();
